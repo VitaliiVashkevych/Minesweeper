@@ -20,9 +20,12 @@ const gameSlice = createSlice({
         return state;
       }
 
-      const difficulty = document.getElementById("difficulty")!.value;
-      let mines;
-      let size;
+      const difficultyElement = document.getElementById(
+        "difficulty"
+      ) as HTMLInputElement;
+      const difficulty = difficultyElement.value;
+      let mines = 0;
+      let size = 0;
 
       switch (difficulty) {
         case "easy":
@@ -130,8 +133,11 @@ const gameSlice = createSlice({
     },
 
     resetGame: (state) => {
-      const difficulty = document.getElementById("difficulty")!.value;
-      let size;
+      const difficultyElement = document.getElementById(
+        "difficulty"
+      ) as HTMLInputElement;
+      const difficulty = difficultyElement.value;
+      let size = 0;
 
       switch (difficulty) {
         case "easy":
