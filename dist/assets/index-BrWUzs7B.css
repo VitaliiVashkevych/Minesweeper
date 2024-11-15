@@ -1,0 +1,1 @@
+.gameField{display:flex}.cell{width:30px;height:30px;border:1px solid black;display:flex;align-items:center;justify-content:center;color:gray;box-sizing:border-box}.cover{background-color:gray}.cell:hover{border:2px solid black}.active{background-color:#d3d3d3;color:#000}.flag{background-color:red!important;color:red!important}
